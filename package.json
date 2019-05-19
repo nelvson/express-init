@@ -1,0 +1,41 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json src/**/*.{ts,tsx}",
+    "test": "yarn lint && jest --coverage --passWithNoTests",
+    "build": "tsc && babel -d ./lib ./lib --copy-files",
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/validator": "^10.9.0",
+    "babel-preset-minify": "^0.5.0",
+    "babel-watch": "^2.0.7",
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.13.2",
+    "dotenv": "^6.2.0",
+    "express": "4.16.4",
+    "jest": "^23.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.13",
+    "nodemon": "^1.18.9",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jest": "^23.3.13",
+    "@types/mongodb": "^3.1.19"
+  }
+}
+
